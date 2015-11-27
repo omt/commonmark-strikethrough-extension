@@ -1,0 +1,29 @@
+{
+    "name": "onemorething/commonmark-strikethrough-extension",
+    "type": "library",
+    "description": "Extension for the `league/commonmark` parser to add strikethrough (~~) support",
+    "keywords": ["markdown", "commonmark", "extension", "strikethrough", "strike", "del"],
+    "authors": [
+        {
+            "name": "Marijn van der Werf",
+            "email": "maril@marijnvdwerf.nl",
+            "homepage": "http://marijnvdwerf.nl"
+        }
+    ],
+    "require": {
+        "league/commonmark": "^0.12.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "OneMoreThing\\CommonMark\\Strikethrough\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "OneMoreThing\\CommonMark\\Strikethrough\\Functional\\": "tests/functional"
+        }
+    }
+}
